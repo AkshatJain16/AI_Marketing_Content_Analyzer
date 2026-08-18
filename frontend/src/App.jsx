@@ -24,7 +24,7 @@ function App() {
     setLoading(true);
     setError('');
 
-    fetch('http://localhost:5000/api/analyze', {
+    fetch(`${import.meta.env.Marketing_analyzer_backend_API}/api/analyze`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
