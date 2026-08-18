@@ -5,7 +5,7 @@ require('dotenv').config();
 const {GoogleGenAI} = require('@google/genai')
 
 const app = express();
-const USE_MOCK_DATA = true; // Set to true to use mock data for testing
+const USE_MOCK_DATA = false; // Set to true to use mock data for testing
 
 const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY
